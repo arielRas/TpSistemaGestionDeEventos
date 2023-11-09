@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,34 @@ namespace UI
         public FormLogin()
         {
             InitializeComponent();
+        }
+
+        private UsuarioBusiness usuarioBusiness = new UsuarioBusiness();
+
+        private void btnLoggear_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                usuarioBusiness.InstanciarUsuario(txtUsuario.Text, txtPassword.Text);
+
+                FormUserProfile userProfile = new FormUserProfile();
+
+                this.Hide();
+
+                userProfile.ShowDialog();
+
+                this.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "AVISO");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
