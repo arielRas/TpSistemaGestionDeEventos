@@ -43,23 +43,14 @@ namespace Entity
 
         //METODOS
 
-        public ServicioContratadoEntity NuevoServicioContrado(ServicioPublicadoEntity nuevoServicio, int cantidad) //TRANSAFORMA UN SERVICIO PUBLICADO EN SERVICIO CONTRATADO PARA PASAR AL BUSINESS
+        private ServicioContratadoEntity NuevoServicioContrado(ServicioPublicadoEntity nuevoServicio, int cantidad) //TRANSAFORMA UN SERVICIO PUBLICADO EN SERVICIO CONTRATADO PARA PASAR AL BUSINESS
         {
-            ServicioContratadoEntity servicioContratado = new ServicioContratadoEntity(
-                nuevoServicio.Proveedor.IdProveedor,
-                nuevoServicio.Servicio,
-                nuevoServicio.PrcioXunidad,
-                cantidad,
-                (nuevoServicio.PrcioXunidad * cantidad),
-                nuevoServicio.Descripcion
-                );
-
-            return servicioContratado;
+            return new ServicioContratadoEntity( nuevoServicio, cantidad, (nuevoServicio.PrcioXunidad * cantidad) );
         }
 
-        public void ActualizarServiciosContratados(List<ServicioContratadoEntity> serviciosContrados)
+        public void ContratarServicio(ServicioPublicadoEntity nuevoServicio, int cantidad)
         {
-            this.serviciosContratados = serviciosContrados;
+            this.serviciosContratados.Add(NuevoServicioContrado(nuevoServicio, cantidad));
         }
 
         public void ActualizarListaInvitados(List<InvitadoEntity> invitados)

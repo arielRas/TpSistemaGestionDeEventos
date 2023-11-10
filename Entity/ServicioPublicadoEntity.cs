@@ -9,8 +9,9 @@ namespace Entity
     public class ServicioPublicadoEntity
     {
         //CONSTRUCTOR
-        public ServicioPublicadoEntity(ProveedorEntity proveedor, ServicioEntity servicio, double precioXunidad, string descripcion)
+        public ServicioPublicadoEntity(string codigoPublicacion,ProveedorEntity proveedor, ServicioEntity servicio, double precioXunidad, string descripcion)
         {
+            this.codigoPublicacion = codigoPublicacion;
             this.proveedor = proveedor;
             this.servicio = servicio;
             this.precioXunidad = precioXunidad;
@@ -18,6 +19,7 @@ namespace Entity
         }
 
         //ATRIBUTOS PRIVADOS
+        private string codigoPublicacion;
         private ProveedorEntity proveedor;
         private ServicioEntity servicio;
         private double precioXunidad;
@@ -25,9 +27,10 @@ namespace Entity
 
 
         //PROPIEDADES PUBLICAS
+        public string CodigoPublicacion { get => codigoPublicacion; }
         public ProveedorEntity Proveedor { get => proveedor; }
         public ServicioEntity Servicio { get => servicio; }
         public double PrcioXunidad { get => precioXunidad; }
-        public string Descripcion { get => descripcion; }
+        public string Descripcion { get => descripcion; }        
     }
 }
