@@ -61,6 +61,8 @@
     <Compile Include="ContextDb\SERVICIO_PUBLICADO.cs" />
     <Compile Include="ContextDb\TIPO_USUARIO.cs" />
     <Compile Include="ContextDb\USUARIO.cs" />
+    <Compile Include="ProveedorDao.cs" />
+    <Compile Include="ServicioDao.cs" />
     <Compile Include="UsuarioDao.cs" />
   </ItemGroup>
   <ItemGroup>
