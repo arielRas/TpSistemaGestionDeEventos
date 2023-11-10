@@ -4,3 +4,9 @@ C:\Users\Ariel\Desktop\SistemaGestionEventos\Entity\obj\Debug\Entity.csproj.Asse
 C:\Users\Ariel\Desktop\SistemaGestionEventos\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
 C:\Users\Ariel\Desktop\SistemaGestionEventos\Entity\obj\Debug\Entity.dll
 C:\Users\Ariel\Desktop\SistemaGestionEventos\Entity\obj\Debug\Entity.pdb
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\bin\Debug\Entity.dll
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\bin\Debug\Entity.pdb
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\obj\Debug\Entity.dll
+C:\Users\Ariel\Desktop\Repositorios\TpSistemaGestionDeEventos\Entity\obj\Debug\Entity.pdb

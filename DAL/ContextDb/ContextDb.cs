@@ -37,6 +37,11 @@ namespace DAL
                 .WithRequired(e => e.EVENTO)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<EVENTO>()
+                .HasMany(e => e.PAGO1)
+                .WithRequired(e => e.EVENTO)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<EVENTO_SERVICIO>()
                 .Property(e => e.SUBTOTAL)
                 .HasPrecision(10, 2);

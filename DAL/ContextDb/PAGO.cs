@@ -10,9 +10,13 @@ namespace DAL
     public partial class PAGO
     {
         [Key]
+        [Column(Order = 0)]
         public int ID_PAGO { get; set; }
 
-        public int? ID_EVENTO { get; set; }
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int ID_EVENTO { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime FECHA_PAGO { get; set; }
